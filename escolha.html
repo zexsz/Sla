@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pagina do Paciente</title>
+    <style>
+        .ola {
+            position: absolute;
+            top: 000px;
+            left: 40px;
+            font-size: 60px;
+            bottom: 200px;
+            
+        }
+        .pergunta {
+            position: absolute;
+            top: 170px;
+            left: 120px;
+            font-size: 40px;
+            bottom: 200px;
+        }
+        .voltar{ 
+            width: 200px;
+            border-radius: 10%;
+            height: 45px;
+            position: absolute;
+            top: 260px;
+            left: 50px;
+            
+        }
+        .informacoes {
+            width: 200px;
+            border-radius: 10%;
+            height: 45px;
+            position: absolute;
+            top: 260px;
+            left: 280px;
+            
+        }
+    </style>
+</head>
+<body>
+    <h1 class="ola"><strong id="saudacao"></strong></h1>
+    <p class="pergunta">Oque deseja fazer ?</p>
+    <a href="pagina.html">
+    <button class="voltar">Voltar a Página inicial</button>
+    </a>
+    <a href="paginfo.html">
+    <button class="informacoes">Fazer simulação</button>
+    </a>
+    <script>
+    let nome = localStorage.getItem("nome");
+    document.getElementById("saudacao").textContent = "Olá, " + nome + "!";
+    </script>
+</body>
+</html>

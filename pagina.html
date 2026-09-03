@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Previdencia</title>
+    <style>
+        .quadrado {
+            width: 600px;
+            height: 500px;
+            background-color: #ccccccd0;
+            bottom: 300px;
+        top: 170px;
+            left: 500px;
+            position: absolute;
+
+        }
+        .foto {
+            width: 200px;
+            border-radius: 50%;
+            height: 200px;
+            position: absolute;
+            top: 190px;
+            left: 700px;
+        }
+        .titulo {
+            position: absolute;
+            top: 000px;
+            left: 450px;
+            font-size: 95px;
+            bottom: 200px;
+        }
+        .pergunta {
+            position: absolute;
+            top: 380px;
+            left: 600px;
+            font-size: 35px;
+            bottom: 200px;
+            
+        }
+        .escrever {
+            width: 450px;
+            border-radius: 15%;
+            height: 50px;
+            position: absolute;
+            top: 490px;
+            left: 580px;
+            resize: none;
+            font-size: 45px;
+        }
+        .botao{
+            width: 200px;
+            border-radius: 10%;
+            height: 75px;
+            position: absolute;
+            top: 570px;
+            left: 710px;
+            
+
+        }
+    </style>
+</head>
+<body>
+    <div class="quadrado"></div>
+    <img class="foto" src="download.jpeg" alt="Foto">
+    <h1 class="titulo"><bigger>Previdência Social</bigger></h1>
+    <p class="pergunta">Como podemos te chamar ?</p>
+    <input type="text" id="nome" class="escrever">
+     <button class="botao" onclick="salvarNome()">Entrar</button>
+<script src="script.js"></script>
+</body>
+</html>

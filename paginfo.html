@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário</title>
+    <style>
+        .idade {
+            position: absolute;
+            top: 180px;
+            left: 50px;
+            font-size: 50px;
+            bottom: 0px;
+        }
+        .escreveri {
+            position: absolute;
+            top: 245px;
+            width: 200px;
+            height: 30px;
+            border-radius: 15%;
+            left: 300px;
+            resize: none;
+            font-size: 33px;
+        }
+            .responda {
+            position: absolute;
+            width: 600px;
+            height: 100px;
+            font-size: 40px;
+            left: 460px;
+            
+        }
+        .aposentar {
+            position: absolute;
+            top: 330px;
+            left: 50px;
+            font-size: 50px;
+            bottom: 0px;
+        }
+        .renda {
+            position: absolute;
+            top: 500px;
+            left: 50px;
+            font-size: 50px;
+            bottom: 0px;
+        }
+        .escrevera {
+            position: absolute;
+            top: 395px;
+            width: 200px;
+            height: 30px;
+            border-radius: 15%;
+            left: 830px;
+            resize: none;
+            font-size: 33px;
+        }
+        .rendam {
+            position: absolute;
+            top: 570px;
+            width: 200px;
+            height: 30px;
+            border-radius: 15%;
+            left: 550px;
+            resize: none;
+            font-size: 33px;
+        }
+        .simular {
+            position: absolute;
+            top: 650px;
+            width: 200px;
+            height: 50px;
+            border-radius: 15%;
+            left: 1090px;
+            resize: none;
+            font-size: 20px;
+        }
+        .voltar {
+            position: absolute;
+            top: 650px;
+            width: 200px;
+            height: 50px;
+            border-radius: 15%;
+            left: 830px;
+            resize: none;
+            font-size: 20px;
+        }
+        .campo {
+            position: absolute;
+            top: 259px;
+            left: 50px;
+            font-size: 20px; 
+            bottom: 0px;
+        }
+        .obrigado {
+            position: absolute;
+            top: 410px;
+            left: 50px;
+            font-size: 20px; 
+            bottom: 0px;
+        }
+        .obrigatorio {
+            position: absolute;
+            top: 584px;
+            left: 50px;
+            font-size: 20px; 
+            bottom: 0px;
+        }
+    </style>
+</head>
+<body>
+    <h1 class="responda">Responda as perguntas abaixo</h1>
+<p class="idade">Idade atual:</p>
+<input type="number" id="idadeAtual" class="escreveri">
+<p class="aposentar">Com qual idade planeja se aposentar ?</p>
+<p class="renda"> Renda mensal desejada:</p>
+<input type="number" id="idadeAposentadoria" class="escrevera">
+<input type="number" id="rendaMensal" class="rendam">
+<button class="simular" onclick="calcular()">Fazer simulação</button>
+<a href="pagina.html">
+    <button class="voltar">Voltar a pagina inicial</button>
+</a>
+<p style="color: red;" class="campo">*Campo obrigatório</p>
+<p style="color: red;" class="obrigado">*Campo obrigatório</p>
+<p style="color: red;" class="obrigatorio">*Campo obrigatório</p>
+<script src="script.js"></script>
+</body>
+</html>
